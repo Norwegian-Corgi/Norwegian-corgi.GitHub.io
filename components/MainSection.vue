@@ -8,7 +8,7 @@ const {isMobileOrTablet} = useDevice();
       <div class="flex flex-col">
         <img class="avatar mb-2" src="@/assets/images/profile-pick.jpeg" alt="Photo of Me"/>
         <h3 class="text-xl">Abde Ali Sabunwala </h3>
-        <h2 class="text-3xl text-green-600">Software Developer</h2>
+        <h2 class="text-3xl text-green-custom">Software Developer</h2>
       </div>
       <div>
         <h1 :class="isMobileOrTablet? 'text-4xl' : 'text-6xl'">Coding My Life:</h1>
