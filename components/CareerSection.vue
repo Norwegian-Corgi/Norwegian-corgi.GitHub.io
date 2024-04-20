@@ -12,7 +12,7 @@ const jobs: Array<Job> = [
     duration: "07-2023 - today",
     company: "systemticks GmbH",
     role: "Software Developer",
-    color: "#00DC82"
+    color: "#009a75"
   },
   {
     duration: "05-2022 - 06-2023",
