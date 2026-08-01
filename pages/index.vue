@@ -1,11 +1,13 @@
 <template>
-  <main class="bg-blue-custom text-white">
-    <main-section id="home" />
-    <about-me-section id="about-me" />
-    <career-section id="career" />
-    <social-links id="social-links" />
-    <footer class="flex justify-center py-8">
-      © 2023-{{ new Date().getFullYear() }} Abde Ali Sabunwala
-    </footer>
-  </main>
+  <div class="grid-backdrop min-h-dvh bg-surface font-body text-content">
+    <site-nav/>
+    <main>
+      <hero-section/>
+      <about-section/>
+      <stack-section/>
+      <career-section/>
+      <marquee-strip/>
+    </main>
+    <site-footer/>
+  </div>
 </template>
