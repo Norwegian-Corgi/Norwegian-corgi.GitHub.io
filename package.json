@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.7.4",
+    "@iconify-json/simple-icons": "^1.2.93",
     "@nuxt/devtools": "latest",
     "@nuxt/image": "^1.5.0",
     "@nuxtjs/device": "^3.1.1",

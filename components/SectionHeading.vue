@@ -8,7 +8,8 @@ defineProps({
     type: String,
     required: false
   },
-  // Centered headings (CORE_STACK, FEATURED_PROJECTS) drop the icon rule underneath.
+  // Centered headings drop the icon rule underneath. Currently unused — every
+  // section heading is left-aligned with an icon.
   centered: {
     type: Boolean,
     default: false

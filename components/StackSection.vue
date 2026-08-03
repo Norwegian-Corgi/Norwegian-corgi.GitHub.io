@@ -4,27 +4,33 @@ type Tech = {
   icon: string;
 }
 
-// Primary stack — rendered as tiles
+// Full stack — rendered as tiles
 const core: Array<Tech> = [
   {name: "Java", icon: "i-grommet-icons-java"},
-  {name: "TypeScript", icon: "i-grommet-icons-code"},
-  {name: "Spring Boot", icon: "i-grommet-icons-deploy"},
-  {name: "Vue / Nuxt", icon: "i-grommet-icons-nodes"},
-  {name: "React", icon: "i-grommet-icons-cube"},
-  {name: "PostgreSQL", icon: "i-grommet-icons-database"},
-  {name: "Docker", icon: "i-grommet-icons-docker"},
-  {name: "Nginx", icon: "i-grommet-icons-server"},
-  {name: "Keycloak", icon: "i-grommet-icons-secure"},
-  {name: "Jira", icon: "i-grommet-icons-tasks"},
+  {name: "TypeScript", icon: "i-simple-icons-typescript"},
+  {name: "HTML5", icon: "i-simple-icons-html5"},
+  {name: "CSS3", icon: "i-simple-icons-css3"},
+  {name: "Spring Boot", icon: "i-simple-icons-springboot"},
+  {name: "Vue / Nuxt", icon: "i-simple-icons-nuxt"},
+  {name: "React", icon: "i-simple-icons-react"},
+  {name: "PostgreSQL", icon: "i-simple-icons-postgresql"},
+  {name: "Docker", icon: "i-simple-icons-docker"},
+  {name: "Nginx", icon: "i-simple-icons-nginx"},
+  {name: "Keycloak", icon: "i-simple-icons-keycloak"},
+  {name: "JUnit5", icon: "i-simple-icons-junit5"},
+  // Mockito has no brand icon in any collection — generic test glyph.
+  {name: "Mockito", icon: "i-grommet-icons-test"},
+  {name: "Git", icon: "i-simple-icons-git"},
+  {name: "IntelliJ", icon: "i-simple-icons-intellijidea"},
+  {name: "VS Code", icon: "i-simple-icons-visualstudiocode"},
+  {name: "Jira", icon: "i-simple-icons-jira"},
+  {name: "Claude Code", icon: "i-simple-icons-claudecode"},
 ]
-
-// Supporting tools — rendered as chips
-const tools: Array<string> = ["JUnit5", "Mockito", "Git", "VS Code", "IntelliJ", "HTML/CSS"]
 </script>
 
 <template>
   <section id="stack" class="mx-auto max-w-6xl scroll-mt-24 px-6 py-16">
-    <section-heading title="CORE_STACK" centered/>
+    <section-heading title="Stack" icon="i-grommet-icons-cubes"/>
 
     <div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
       <div
@@ -35,16 +41,6 @@ const tools: Array<string> = ["JUnit5", "Mockito", "Git", "VS Code", "IntelliJ",
         <span :class="tech.icon" class="text-2xl text-content-variant"/>
         <span class="font-label text-xs tracking-label text-content">{{ tech.name }}</span>
       </div>
-    </div>
-
-    <div class="mt-6 flex flex-wrap justify-center gap-2">
-      <span
-          v-for="tool in tools"
-          :key="tool"
-          class="rounded border border-outline-variant px-3 py-1 font-label text-[0.65rem] tracking-label text-content-variant"
-      >
-        {{ tool }}
-      </span>
     </div>
   </section>
 </template>

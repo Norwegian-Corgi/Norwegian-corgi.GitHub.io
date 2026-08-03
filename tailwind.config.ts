@@ -61,7 +61,9 @@ module.exports = {
     },
     plugins: [
         iconsPlugin({
-            collections: getIconCollections(["grommet-icons"]),
+            // simple-icons carries the brand logos; grommet-icons covers the rest
+            // (and Java, which simple-icons dropped over trademark).
+            collections: getIconCollections(["grommet-icons", "simple-icons"]),
         }),
     ],
 }
